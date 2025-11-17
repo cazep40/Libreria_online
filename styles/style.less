@@ -222,18 +222,26 @@ main {
     }
 
     .estilo_parrafo {
-        /*border: 1px solid black;*/
-        height: 72px;
-        padding: 4px 16px 12px 16px;
-        /*box-sizing: border-box;*/
         font-size: 16px;
         font-weight: 400;
         color: #171412;
         line-height: 24px;
-        margin-bottom: 20px;
+        padding: 4px 16px 12px 16px;
+        box-sizing: border-box;
+
+        &.prrf_idx_1 {
+            /*border: 1px solid black;*/
+            height: 72px;
+            /*padding: 4px 16px 12px 16px;
+            /*box-sizing: border-box;*/
+            margin-bottom: 20px;
+
+        }
+
+
     }
 
-    .estilo_titulos_paginas{
+    .estilo_titulos_paginas {
         /*border: 1px solid pink;*/
         padding: 16px;
         box-sizing: border-box;
@@ -256,7 +264,7 @@ footer {
     height: 200px;
     margin: 0 auto;
     /*centrar vertical*/
-  
+
 
     nav {
         /*border: 1px solid yellow;*/
@@ -293,23 +301,27 @@ footer {
         height: 24px;
         color: #8A7361;
         font-size: 16px;
-    }
 
 
-    .pie_1 {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+        &.pie_1 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
 
-        img {
-            width: 24px;
-            height: 24px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
         }
+
+        &.pie_2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
     }
 
-    .pie_2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
+
 }
